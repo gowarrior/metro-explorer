@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70A0083F21A747790043E181 /* MetroStationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0083E21A747790043E181 /* MetroStationsTableViewController.swift */; };
+		70A78BFD21AA084200CC3608 /* FetchLandmarksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A78BFC21AA084200CC3608 /* FetchLandmarksManager.swift */; };
+		70A78BFF21AA0D2E00CC3608 /* MLandmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A78BFE21AA0D2E00CC3608 /* MLandmark.swift */; };
+		70A78C0121AC95E300CC3608 /* LandmarksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A78C0021AC95E300CC3608 /* LandmarksResponse.swift */; };
+		70C3287421A4CAE500D31CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C3287321A4CAE500D31CFD /* AppDelegate.swift */; };
+		70C3287621A4CAE500D31CFD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C3287521A4CAE500D31CFD /* MenuViewController.swift */; };
+		70C3287921A4CAE500D31CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C3287721A4CAE500D31CFD /* Main.storyboard */; };
+		70C3287B21A4CAEA00D31CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C3287A21A4CAEA00D31CFD /* Assets.xcassets */; };
+		70C3287E21A4CAEA00D31CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C3287C21A4CAEA00D31CFD /* LaunchScreen.storyboard */; };
+		70C3288921A4CAEA00D31CFD /* Metro_ExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C3288821A4CAEA00D31CFD /* Metro_ExplorerTests.swift */; };
+		70C3289421A4CAEA00D31CFD /* Metro_ExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C3289321A4CAEA00D31CFD /* Metro_ExplorerUITests.swift */; };
+		70C328A621A4D40300D31CFD /* LandmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C328A521A4D40300D31CFD /* LandmarksTableViewController.swift */; };
+		70C328A821A4D4F400D31CFD /* LocationDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C328A721A4D4F400D31CFD /* LocationDetector.swift */; };
+		70C328AB21A6532800D31CFD /* MetroStationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C328AA21A6532700D31CFD /* MetroStationsResponse.swift */; };
+		70C328AD21A6585600D31CFD /* FetchMetroStationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C328AC21A6585600D31CFD /* FetchMetroStationsManager.swift */; };
+		70C328AF21A65E9E00D31CFD /* MStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C328AE21A65E9E00D31CFD /* MStation.swift */; };
+		70C7D0D421B5C75D004D2258 /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C7D0D321B5C75D004D2258 /* StationTableViewCell.swift */; };
+		70C7D0DA21B77AFB004D2258 /* LandmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C7D0D921B77AFB004D2258 /* LandmarkTableViewCell.swift */; };
+		70C7D0DC21B8C63D004D2258 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C7D0DB21B8C63D004D2258 /* Extensions.swift */; };
+		70C7D0DE21BA3B2B004D2258 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C7D0DD21BA3B2B004D2258 /* PersistenceManager.swift */; };
+		70C7D0E021BA43AB004D2258 /* LandmarkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C7D0DF21BA43AB004D2258 /* LandmarkDetailViewController.swift */; };
+		74C230F94C688B849CE7F8C0 /* Pods_Metro_ExplorerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B97DF055E50222B422CEC0 /* Pods_Metro_ExplorerTests.framework */; };
+		8F658F5FC7855F52229370D0 /* Pods_Metro_ExplorerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE12393FB8A94A41BA0B6EE /* Pods_Metro_ExplorerUITests.framework */; };
+		F0442624CD2744F1CEFDDF21 /* Pods_Metro_Explorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE76C831F861ABD250A1839 /* Pods_Metro_Explorer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70C3288521A4CAEA00D31CFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70C3286821A4CAE500D31CFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70C3286F21A4CAE500D31CFD;
+			remoteInfo = "Metro Explorer";
+		};
+		70C3289021A4CAEA00D31CFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70C3286821A4CAE500D31CFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70C3286F21A4CAE500D31CFD;
+			remoteInfo = "Metro Explorer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04B97DF055E50222B422CEC0 /* Pods_Metro_ExplorerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metro_ExplorerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD0FA6D37865CADA6D6CFE2 /* Pods-Metro ExplorerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metro ExplorerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metro ExplorerTests/Pods-Metro ExplorerTests.release.xcconfig"; sourceTree = "<group>"; };
+		3DE76C831F861ABD250A1839 /* Pods_Metro_Explorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metro_Explorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE12393FB8A94A41BA0B6EE /* Pods_Metro_ExplorerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metro_ExplorerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A24A6542A6903BF5E94E56F /* Pods-Metro ExplorerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metro ExplorerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metro ExplorerUITests/Pods-Metro ExplorerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70A0083E21A747790043E181 /* MetroStationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroStationsTableViewController.swift; sourceTree = "<group>"; };
+		70A78BFC21AA084200CC3608 /* FetchLandmarksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLandmarksManager.swift; sourceTree = "<group>"; };
+		70A78BFE21AA0D2E00CC3608 /* MLandmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLandmark.swift; sourceTree = "<group>"; };
+		70A78C0021AC95E300CC3608 /* LandmarksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksResponse.swift; sourceTree = "<group>"; };
+		70C3287021A4CAE500D31CFD /* Metro Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metro Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C3287321A4CAE500D31CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70C3287521A4CAE500D31CFD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		70C3287821A4CAE500D31CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70C3287A21A4CAEA00D31CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70C3287D21A4CAEA00D31CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70C3287F21A4CAEA00D31CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70C3288421A4CAEA00D31CFD /* Metro ExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metro ExplorerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C3288821A4CAEA00D31CFD /* Metro_ExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metro_ExplorerTests.swift; sourceTree = "<group>"; };
+		70C3288A21A4CAEA00D31CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70C3288F21A4CAEA00D31CFD /* Metro ExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metro ExplorerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C3289321A4CAEA00D31CFD /* Metro_ExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metro_ExplorerUITests.swift; sourceTree = "<group>"; };
+		70C3289521A4CAEA00D31CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70C328A521A4D40300D31CFD /* LandmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksTableViewController.swift; sourceTree = "<group>"; };
+		70C328A721A4D4F400D31CFD /* LocationDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetector.swift; sourceTree = "<group>"; };
+		70C328AA21A6532700D31CFD /* MetroStationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroStationsResponse.swift; sourceTree = "<group>"; };
+		70C328AC21A6585600D31CFD /* FetchMetroStationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMetroStationsManager.swift; sourceTree = "<group>"; };
+		70C328AE21A65E9E00D31CFD /* MStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MStation.swift; sourceTree = "<group>"; };
+		70C7D0D321B5C75D004D2258 /* StationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
+		70C7D0D921B77AFB004D2258 /* LandmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkTableViewCell.swift; sourceTree = "<group>"; };
+		70C7D0DB21B8C63D004D2258 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		70C7D0DD21BA3B2B004D2258 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		70C7D0DF21BA43AB004D2258 /* LandmarkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetailViewController.swift; sourceTree = "<group>"; };
+		8DB378827C5A95E2AF5D3696 /* Pods-Metro ExplorerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metro ExplorerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metro ExplorerTests/Pods-Metro ExplorerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2DF6C15E7FF7CB8DF118E01 /* Pods-Metro Explorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metro Explorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metro Explorer/Pods-Metro Explorer.debug.xcconfig"; sourceTree = "<group>"; };
+		E8C6BE448495CA816EABF280 /* Pods-Metro Explorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metro Explorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metro Explorer/Pods-Metro Explorer.release.xcconfig"; sourceTree = "<group>"; };
+		F61C3B5C308716C2B830CDC9 /* Pods-Metro ExplorerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metro ExplorerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metro ExplorerUITests/Pods-Metro ExplorerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70C3286D21A4CAE500D31CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0442624CD2744F1CEFDDF21 /* Pods_Metro_Explorer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C3288121A4CAEA00D31CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C230F94C688B849CE7F8C0 /* Pods_Metro_ExplorerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C3288C21A4CAEA00D31CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F658F5FC7855F52229370D0 /* Pods_Metro_ExplorerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E62DCD262DB88EDEFCC4679 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF6C15E7FF7CB8DF118E01 /* Pods-Metro Explorer.debug.xcconfig */,
+				E8C6BE448495CA816EABF280 /* Pods-Metro Explorer.release.xcconfig */,
+				8DB378827C5A95E2AF5D3696 /* Pods-Metro ExplorerTests.debug.xcconfig */,
+				3DD0FA6D37865CADA6D6CFE2 /* Pods-Metro ExplorerTests.release.xcconfig */,
+				F61C3B5C308716C2B830CDC9 /* Pods-Metro ExplorerUITests.debug.xcconfig */,
+				6A24A6542A6903BF5E94E56F /* Pods-Metro ExplorerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		70C3286721A4CAE500D31CFD = {
+			isa = PBXGroup;
+			children = (
+				70C3287221A4CAE500D31CFD /* Metro Explorer */,
+				70C3288721A4CAEA00D31CFD /* Metro ExplorerTests */,
+				70C3289221A4CAEA00D31CFD /* Metro ExplorerUITests */,
+				70C3287121A4CAE500D31CFD /* Products */,
+				4E62DCD262DB88EDEFCC4679 /* Pods */,
+				7C13D130F9590DDE9240E27A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70C3287121A4CAE500D31CFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70C3287021A4CAE500D31CFD /* Metro Explorer.app */,
+				70C3288421A4CAEA00D31CFD /* Metro ExplorerTests.xctest */,
+				70C3288F21A4CAEA00D31CFD /* Metro ExplorerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70C3287221A4CAE500D31CFD /* Metro Explorer */ = {
+			isa = PBXGroup;
+			children = (
+				70C328A921A652D900D31CFD /* models */,
+				70C328A421A4D1F100D31CFD /* manager */,
+				70C328A321A4D18B00D31CFD /* view controllers */,
+				70C3287321A4CAE500D31CFD /* AppDelegate.swift */,
+				70C3287721A4CAE500D31CFD /* Main.storyboard */,
+				70C3287A21A4CAEA00D31CFD /* Assets.xcassets */,
+				70C3287C21A4CAEA00D31CFD /* LaunchScreen.storyboard */,
+				70C3287F21A4CAEA00D31CFD /* Info.plist */,
+				70C7D0D321B5C75D004D2258 /* StationTableViewCell.swift */,
+				70C7D0D921B77AFB004D2258 /* LandmarkTableViewCell.swift */,
+				70C7D0DB21B8C63D004D2258 /* Extensions.swift */,
+			);
+			path = "Metro Explorer";
+			sourceTree = "<group>";
+		};
+		70C3288721A4CAEA00D31CFD /* Metro ExplorerTests */ = {
+			isa = PBXGroup;
+			children = (
+				70C3288821A4CAEA00D31CFD /* Metro_ExplorerTests.swift */,
+				70C3288A21A4CAEA00D31CFD /* Info.plist */,
+			);
+			path = "Metro ExplorerTests";
+			sourceTree = "<group>";
+		};
+		70C3289221A4CAEA00D31CFD /* Metro ExplorerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70C3289321A4CAEA00D31CFD /* Metro_ExplorerUITests.swift */,
+				70C3289521A4CAEA00D31CFD /* Info.plist */,
+			);
+			path = "Metro ExplorerUITests";
+			sourceTree = "<group>";
+		};
+		70C328A321A4D18B00D31CFD /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70C3287521A4CAE500D31CFD /* MenuViewController.swift */,
+				70C328A521A4D40300D31CFD /* LandmarksTableViewController.swift */,
+				70A0083E21A747790043E181 /* MetroStationsTableViewController.swift */,
+				70C7D0DF21BA43AB004D2258 /* LandmarkDetailViewController.swift */,
+			);
+			path = "view controllers";
+			sourceTree = "<group>";
+		};
+		70C328A421A4D1F100D31CFD /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				70C328A721A4D4F400D31CFD /* LocationDetector.swift */,
+				70C328AC21A6585600D31CFD /* FetchMetroStationsManager.swift */,
+				70A78BFC21AA084200CC3608 /* FetchLandmarksManager.swift */,
+				70C7D0DD21BA3B2B004D2258 /* PersistenceManager.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		70C328A921A652D900D31CFD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				70C328AA21A6532700D31CFD /* MetroStationsResponse.swift */,
+				70C328AE21A65E9E00D31CFD /* MStation.swift */,
+				70A78BFE21AA0D2E00CC3608 /* MLandmark.swift */,
+				70A78C0021AC95E300CC3608 /* LandmarksResponse.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		7C13D130F9590DDE9240E27A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DE76C831F861ABD250A1839 /* Pods_Metro_Explorer.framework */,
+				04B97DF055E50222B422CEC0 /* Pods_Metro_ExplorerTests.framework */,
+				5BE12393FB8A94A41BA0B6EE /* Pods_Metro_ExplorerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70C3286F21A4CAE500D31CFD /* Metro Explorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70C3289821A4CAEA00D31CFD /* Build configuration list for PBXNativeTarget "Metro Explorer" */;
+			buildPhases = (
+				7EE1A02FF983C5DB2D38EF47 /* [CP] Check Pods Manifest.lock */,
+				70C3286C21A4CAE500D31CFD /* Sources */,
+				70C3286D21A4CAE500D31CFD /* Frameworks */,
+				70C3286E21A4CAE500D31CFD /* Resources */,
+				D09FC120D197C04F3558C0DC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Metro Explorer";
+			productName = "Metro Explorer";
+			productReference = 70C3287021A4CAE500D31CFD /* Metro Explorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70C3288321A4CAEA00D31CFD /* Metro ExplorerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70C3289B21A4CAEA00D31CFD /* Build configuration list for PBXNativeTarget "Metro ExplorerTests" */;
+			buildPhases = (
+				7812B1A140776C91157F7044 /* [CP] Check Pods Manifest.lock */,
+				70C3288021A4CAEA00D31CFD /* Sources */,
+				70C3288121A4CAEA00D31CFD /* Frameworks */,
+				70C3288221A4CAEA00D31CFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70C3288621A4CAEA00D31CFD /* PBXTargetDependency */,
+			);
+			name = "Metro ExplorerTests";
+			productName = "Metro ExplorerTests";
+			productReference = 70C3288421A4CAEA00D31CFD /* Metro ExplorerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70C3288E21A4CAEA00D31CFD /* Metro ExplorerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70C3289E21A4CAEA00D31CFD /* Build configuration list for PBXNativeTarget "Metro ExplorerUITests" */;
+			buildPhases = (
+				954894626CCC7830FF9ABD60 /* [CP] Check Pods Manifest.lock */,
+				70C3288B21A4CAEA00D31CFD /* Sources */,
+				70C3288C21A4CAEA00D31CFD /* Frameworks */,
+				70C3288D21A4CAEA00D31CFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70C3289121A4CAEA00D31CFD /* PBXTargetDependency */,
+			);
+			name = "Metro ExplorerUITests";
+			productName = "Metro ExplorerUITests";
+			productReference = 70C3288F21A4CAEA00D31CFD /* Metro ExplorerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70C3286821A4CAE500D31CFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = XYZ;
+				TargetAttributes = {
+					70C3286F21A4CAE500D31CFD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					70C3288321A4CAEA00D31CFD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 70C3286F21A4CAE500D31CFD;
+					};
+					70C3288E21A4CAEA00D31CFD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 70C3286F21A4CAE500D31CFD;
+					};
+				};
+			};
+			buildConfigurationList = 70C3286B21A4CAE500D31CFD /* Build configuration list for PBXProject "Metro Explorer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70C3286721A4CAE500D31CFD;
+			productRefGroup = 70C3287121A4CAE500D31CFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70C3286F21A4CAE500D31CFD /* Metro Explorer */,
+				70C3288321A4CAEA00D31CFD /* Metro ExplorerTests */,
+				70C3288E21A4CAEA00D31CFD /* Metro ExplorerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70C3286E21A4CAE500D31CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C3287E21A4CAEA00D31CFD /* LaunchScreen.storyboard in Resources */,
+				70C3287B21A4CAEA00D31CFD /* Assets.xcassets in Resources */,
+				70C3287921A4CAE500D31CFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C3288221A4CAEA00D31CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C3288D21A4CAEA00D31CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7812B1A140776C91157F7044 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Metro ExplorerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EE1A02FF983C5DB2D38EF47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Metro Explorer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		954894626CCC7830FF9ABD60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Metro ExplorerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D09FC120D197C04F3558C0DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Metro Explorer/Pods-Metro Explorer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metro Explorer/Pods-Metro Explorer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70C3286C21A4CAE500D31CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C328AF21A65E9E00D31CFD /* MStation.swift in Sources */,
+				70C3287621A4CAE500D31CFD /* MenuViewController.swift in Sources */,
+				70C7D0D421B5C75D004D2258 /* StationTableViewCell.swift in Sources */,
+				70C328AD21A6585600D31CFD /* FetchMetroStationsManager.swift in Sources */,
+				70A78BFD21AA084200CC3608 /* FetchLandmarksManager.swift in Sources */,
+				70C328A621A4D40300D31CFD /* LandmarksTableViewController.swift in Sources */,
+				70C7D0DE21BA3B2B004D2258 /* PersistenceManager.swift in Sources */,
+				70A78C0121AC95E300CC3608 /* LandmarksResponse.swift in Sources */,
+				70A0083F21A747790043E181 /* MetroStationsTableViewController.swift in Sources */,
+				70C328AB21A6532800D31CFD /* MetroStationsResponse.swift in Sources */,
+				70C3287421A4CAE500D31CFD /* AppDelegate.swift in Sources */,
+				70C7D0DA21B77AFB004D2258 /* LandmarkTableViewCell.swift in Sources */,
+				70C328A821A4D4F400D31CFD /* LocationDetector.swift in Sources */,
+				70C7D0E021BA43AB004D2258 /* LandmarkDetailViewController.swift in Sources */,
+				70A78BFF21AA0D2E00CC3608 /* MLandmark.swift in Sources */,
+				70C7D0DC21B8C63D004D2258 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C3288021A4CAEA00D31CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C3288921A4CAEA00D31CFD /* Metro_ExplorerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C3288B21A4CAEA00D31CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C3289421A4CAEA00D31CFD /* Metro_ExplorerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70C3288621A4CAEA00D31CFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70C3286F21A4CAE500D31CFD /* Metro Explorer */;
+			targetProxy = 70C3288521A4CAEA00D31CFD /* PBXContainerItemProxy */;
+		};
+		70C3289121A4CAEA00D31CFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70C3286F21A4CAE500D31CFD /* Metro Explorer */;
+			targetProxy = 70C3289021A4CAEA00D31CFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70C3287721A4CAE500D31CFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70C3287821A4CAE500D31CFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70C3287C21A4CAEA00D31CFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70C3287D21A4CAEA00D31CFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70C3289621A4CAEA00D31CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70C3289721A4CAEA00D31CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70C3289921A4CAEA00D31CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2DF6C15E7FF7CB8DF118E01 /* Pods-Metro Explorer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9S9HTVY3;
+				INFOPLIST_FILE = "Metro Explorer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william.Metro-Explorer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70C3289A21A4CAEA00D31CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8C6BE448495CA816EABF280 /* Pods-Metro Explorer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9S9HTVY3;
+				INFOPLIST_FILE = "Metro Explorer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william.Metro-Explorer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70C3289C21A4CAEA00D31CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DB378827C5A95E2AF5D3696 /* Pods-Metro ExplorerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9S9HTVY3;
+				INFOPLIST_FILE = "Metro ExplorerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william.Metro-ExplorerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metro Explorer.app/Metro Explorer";
+			};
+			name = Debug;
+		};
+		70C3289D21A4CAEA00D31CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD0FA6D37865CADA6D6CFE2 /* Pods-Metro ExplorerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9S9HTVY3;
+				INFOPLIST_FILE = "Metro ExplorerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william.Metro-ExplorerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metro Explorer.app/Metro Explorer";
+			};
+			name = Release;
+		};
+		70C3289F21A4CAEA00D31CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61C3B5C308716C2B830CDC9 /* Pods-Metro ExplorerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9S9HTVY3;
+				INFOPLIST_FILE = "Metro ExplorerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william.Metro-ExplorerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Metro Explorer";
+			};
+			name = Debug;
+		};
+		70C328A021A4CAEA00D31CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A24A6542A6903BF5E94E56F /* Pods-Metro ExplorerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP9S9HTVY3;
+				INFOPLIST_FILE = "Metro ExplorerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william.Metro-ExplorerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Metro Explorer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70C3286B21A4CAE500D31CFD /* Build configuration list for PBXProject "Metro Explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70C3289621A4CAEA00D31CFD /* Debug */,
+				70C3289721A4CAEA00D31CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70C3289821A4CAEA00D31CFD /* Build configuration list for PBXNativeTarget "Metro Explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70C3289921A4CAEA00D31CFD /* Debug */,
+				70C3289A21A4CAEA00D31CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70C3289B21A4CAEA00D31CFD /* Build configuration list for PBXNativeTarget "Metro ExplorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70C3289C21A4CAEA00D31CFD /* Debug */,
+				70C3289D21A4CAEA00D31CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70C3289E21A4CAEA00D31CFD /* Build configuration list for PBXNativeTarget "Metro ExplorerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70C3289F21A4CAEA00D31CFD /* Debug */,
+				70C328A021A4CAEA00D31CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70C3286821A4CAE500D31CFD /* Project object */;
+}
